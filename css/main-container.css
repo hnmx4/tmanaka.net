@@ -35,6 +35,7 @@ h1 {
     white-space: nowrap;
 }
 
+/* section-common */
 #main section {
     margin-bottom: 60px;
 }
@@ -61,24 +62,14 @@ h1 {
     padding: 0 0 16px 0;
     border-bottom: solid 2px var(--deep);
 }
-
-#main .item:not(:last-child) {
-    padding-bottom: 20px;
-}
-
-.time-series .item-wrap {
-    padding: 0;
-    margin: 0 0 0 22px;
-}
 /* section-title と　item の間の線を埋める */
-.time-series .pad {
-    list-style-type: none;
+#main .pad {
     content: '';
     height: 14px;
     width: 100%;
     border-left: 2px solid var(--deep);
 }
-.time-series .item:before {
+#main .item:before {
     content: '';
     width: 16px;
     height: 16px;
@@ -88,6 +79,16 @@ h1 {
     border: 2px solid var(--deep);
     background: var(--light);
 }
+
+#main .item-wrap {
+    padding: 0;
+    margin: 0 0 0 22px;
+}
+#main .item:not(:last-child) {
+    padding-bottom: 20px;
+}
+
+/* time-series section */
 .time-series .item {
     align-items: flex-start;
     display: flex;
