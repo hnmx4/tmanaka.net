@@ -98,6 +98,9 @@ h1 {
     width: 140px;
 }
 .time-series-item .item-headline {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
 }
 .time-series-item .item-text {
     padding-top: 0.5em;

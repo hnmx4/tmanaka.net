@@ -17,7 +17,20 @@
     padding: 0 0 16px 0;
     border-bottom: solid 2px var(--light);
 }
-.item-label {
+
+#side .item-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+#side .item {
+    height: 42px;
+    display: flex;
+}
+#side .item-label {
     flex-basis: 40px;
     display: flex;
     align-items: center;
@@ -26,9 +39,31 @@
     color: var(--light);
     font-size: 24px;
 }
+#side .item-text-wrap {
+    display: flex;
+    flex-direction: column;
+}
+#side .item-name {
+    font-weight: 500;
+    flex: 1;
+}
+#side .item-text {
+    flex: 1;
+}
+
+#side a {
+    text-decoration: none;
+    color: var(--accent);
+}
+.info-section, .social-section {
+    width: 270px;
+    margin-left: auto;
+    margin-bottom: 40px;
+}
+
 
 /* image */
-.image-section{
+.image-section {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,59 +77,7 @@
 }
 
 /* info */
-.info-section {
-    width: 270px;
-    margin-left: auto;
-    margin-bottom: 40px;
-}
-.info-section .item-wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 198px;  /* =42*4+10*(4-1) */
-}
-.info-section .item {
-    height: 42px;
-    display: flex;
-}
-.info-section .item-label {
-    flex-basis: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.info-section .item-text-wrap {
-    display: flex;
-    flex-direction: column;
-}
-.info-section .item-text {
-    flex: 1;
-}
+.info-section .item-wrap { height: 198px;  /* =42*4+10*(4-1) */ }
 
 /* social */
-.social-section {
-    width: 270px;
-    margin-left: auto;
-}
-.social-section a {
-    text-decoration: none;
-    color: var(--accent);
-}
-.social-section .item-wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 250px;  /* =42*5+10*(5-1) */
-}
-.social-section .item {
-    height: 42px;
-    display: flex;
-}
-
-.social-section .item-text-wrap {
-    display: flex;
-    flex-direction: column;
-}
-.social-section .item-text {
-    flex: 1;
-}
+.social-section .item-wrap { height: 250px;  /* =42*5+10*(5-1) */ }
