@@ -289,7 +289,11 @@ h1 {
     margin-right: 40px;
     width: 140px;
 }
+.time-series-item .item-headline {
+}
 .time-series-item .item-text {
+    padding-top: 0.5em;
+    line-height: 1.5em;
 }
 
 /* pc */
