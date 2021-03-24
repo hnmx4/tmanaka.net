@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700,500,900");
+:root {
+    --light: rgba(242, 242, 242, 1);
+    --deep: rgba(51, 51, 51, 1);
+    --accent: rgba(69, 177, 203, 1);
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+.notosansjp-bold-light-16px {
+    color: var(--light);
+    font-family: "Noto Sans JP", Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+}
+.notosansjp-normal-light-16px {
+    color: var(--light);
+    font-family: "Noto Sans JP", Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px
+}
+.notosansjp-bold-light-28px {
+    color: var(--light);
+    font-family: "Noto Sans JP", Helvetica;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+.notosansjp-bold-deep-28px {
+    color: var(--deep);
+    font-family: "Noto Sans JP", Helvetica;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+.notosansjp-medium-deep-20px {
+    color: var(--deep);
+    font-family: "Noto Sans JP", Helvetica;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.notosansjp-normal-deep-16px {
+    color: var(--deep);
+    font-family: "Noto Sans JP", Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans JP", Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--deep);
+    background-color: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1, h2, h3 { margin: 0; }
+#body-wrap {
+    align-items: flex-start;
+    display: flex;
+    position: relative;
+    width: 1000px;
+}
+#side {
+    background-color: var(--deep);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* justify-content: flex-end; */
+    flex-basis: 340px;
+    padding-bottom: 40px;
+}
+#main {
+    background-color: var(--light);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start
+    flex-basis: 660px;
+    padding: 0 20px 0 40px;
+}
+
+.fontawesome5free-normal-light-24px {
+    color: var(--light);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+}
+.fontawesome5free-normal-deep-28px {
+    color: var(--deep);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}

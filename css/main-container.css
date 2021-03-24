@@ -1,0 +1,105 @@
+:root {
+    --light: rgba(242, 242, 242, 1);
+    --deep: rgba(51, 51, 51, 1);
+    --accent: rgba(69, 177, 203, 1);
+}
+
+/* main */
+header {
+    height: 280px;
+    padding-top: 90px;
+}
+.contents {
+}
+h1 {
+    color: var(--deep);
+    font-family: "Noto Sans JP", Helvetica;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: 3.2px;
+    line-height: 52px;
+    min-height: 52px;
+    margin: 0 0 15px 0;
+}
+.h1-additional-text {
+    height: 24px;
+    color: var(--deep);
+    font-family: "Noto Sans JP", Helvetica;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 24px;
+    min-height: 24px;
+    white-space: nowrap;
+}
+
+.main-section-title {
+    display: flex;
+    flex-direction: row;
+}
+.main-section-label {
+    width: 46px;
+    height: 46px;
+    border-radius: 46px;
+    border: 2px solid var(--deep);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-section-name {
+    letter-spacing: 3px;
+    width: 530px;
+    margin: 0 0 0 16px;
+    padding: 0 0 16px 0;
+    border-bottom: solid 2px var(--deep);
+
+    /* letter-spacing: 3px;
+       border-bottom: 2px solid var(--deep);
+       margin-left: 20px;
+       padding-bottom: 14px; */
+}
+.time-series .item-wrap:before {
+    content: '';
+    height: 14px;
+    border-left: 2px solid var(--deep);
+}
+.time-series .item-wrap {
+    padding: 0;
+    margin: 0 0 0 22px;
+}
+.time-series-item:before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 393px;  /* =340+40+13 */
+    /* z-index: 1; */
+    border-radius: 16px;
+    border: 2px solid var(--deep);
+    background: var(--light);
+}
+.time-series-item {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    margin-right: 0;
+    padding-bottom: 20px;
+}
+.time-series-item:not(:last-child) {
+    border-left: 2px solid var(--deep);
+}
+.time-series-item .text-term {
+    letter-spacing: -0.6px;
+    line-height: 16px;
+    margin-left: 24px;
+    margin-right: 40px;
+    width: 140px;
+}
+.time-series-item .item-headline {
+}
+.time-series-item .item-text {
+    padding-top: 0.5em;
+    line-height: 1.5em;
+}
