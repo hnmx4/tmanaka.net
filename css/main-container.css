@@ -40,9 +40,13 @@ h1 {
     flex-direction: row;
 }
 .main-section-label {
+    font-size: 28px;
+    line-height: 28px;
+
     width: 46px;
     height: 46px;
     border-radius: 46px;
+    background-color: var(--light);
     border: 2px solid var(--deep);
     display: flex;
     align-items: center;
