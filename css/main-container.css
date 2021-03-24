@@ -10,6 +10,7 @@ header {
 }
 .contents {
 }
+
 h1 {
     color: var(--deep);
     font-family: "Noto Sans JP", Helvetica;
@@ -34,14 +35,16 @@ h1 {
     white-space: nowrap;
 }
 
-.main-section-title {
+#main section {
+    margin-bottom: 60px;
+}
+#main .section-title {
     display: flex;
     flex-direction: row;
 }
-.main-section-label {
+#main .section-label {
     font-size: 28px;
     line-height: 28px;
-
     width: 46px;
     height: 46px;
     border-radius: 46px;
@@ -51,13 +54,23 @@ h1 {
     align-items: center;
     justify-content: center;
 }
-.main-section-name {
+#main .section-name {
     letter-spacing: 3px;
     width: 530px;
     margin: 0 0 0 16px;
     padding: 0 0 16px 0;
     border-bottom: solid 2px var(--deep);
 }
+
+#main .item:not(:last-child) {
+    padding-bottom: 20px;
+}
+
+.time-series .item-wrap {
+    padding: 0;
+    margin: 0 0 0 22px;
+}
+/* section-title と　item の間の線を埋める */
 .time-series .pad {
     list-style-type: none;
     content: '';
@@ -65,44 +78,39 @@ h1 {
     width: 100%;
     border-left: 2px solid var(--deep);
 }
-.time-series .item-wrap {
-    padding: 0;
-    margin: 0 0 0 22px;
-}
-.time-series-item:before {
+.time-series .item:before {
     content: '';
     width: 16px;
     height: 16px;
     position: absolute;
     left: 393px;  /* =340+40+13 */
-    /* z-index: 1; */
     border-radius: 16px;
     border: 2px solid var(--deep);
     background: var(--light);
 }
-.time-series-item {
+.time-series .item {
     align-items: flex-start;
     display: flex;
     flex-direction: row;
     margin-right: 0;
-    padding-bottom: 20px;
 }
-.time-series-item:not(:last-child) {
+.time-series .item:not(:last-child) {
     border-left: 2px solid var(--deep);
 }
-.time-series-item .text-term {
+
+.time-series .text-term {
     letter-spacing: -0.6px;
     line-height: 16px;
     margin-left: 24px;
     margin-right: 40px;
     width: 140px;
 }
-.time-series-item .item-headline {
+.time-series .item-headline {
     font-size: 20px;
     line-height: 20px;
     font-weight: 500;
 }
-.time-series-item .item-text {
+.time-series .item-text {
     padding-top: 0.5em;
     line-height: 1.5em;
 }
