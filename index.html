@@ -146,12 +146,19 @@
                         </div>
                         <ul class="item-wrap">
                             <li class="pad"></li>
-                            <li class="item">
-                                <h3 class="item-headline">Programming Languages</h3>
-                                <div class="item-text">
-                                    JavaScript
-                                </div>
-                            </li>
+                            <script>
+                                $(document).ready(() => {
+                                    const params = {
+                                        "Programming Languages": [
+                                            ["JavaScript", 5],
+                                            ["TypeScript", 5],
+                                        ],
+                                    };
+                                    for (const [k, v] of Object.entries(params)) {
+                                        $(".skills > .item-wrap").append(genSkillsSectionItem(k, v));
+                                    }
+                                });
+                            </script>
                         </ul>
                     </section>
 

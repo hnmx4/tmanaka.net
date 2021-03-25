@@ -54,8 +54,34 @@ const genEducationSectionItem = (term, degree, info) => {
     return(item);
 };
 
-const genSkillsSectionItem = () => {
-    const item = ``;
+const genSkillLevelGraph = (level) => {
+    const max = 10;
+    const fill = Array.from({length:level}, _ => '<div class="fill-circle"></div>');
+    const empty = Array.from({length:max-level}, _ => '<div class="empty-circle"></div>');
+    const ret = fill.concat(empty).join('');
+    return(ret);
+}
+
+const genSkillsSectionItem = (category, skillList) => {
+    // skillList format [['name', level], ['name2', level],...]
+    const skillItems = Array.from(skillList, x => `
+<li class="skill-item">
+    <div class="skill-name">${x[0]}</div>
+    <div class="skill-level">
+        ${genSkillLevelGraph(x[1])}
+    </div>
+</li>`
+    );
+
+    const item = `
+<li class="item">
+    <h3 class="item-headline">${category}</h3>
+    <ul class="item-text">
+        ${skillItems.join("\n")}
+    </ul>
+</li>    
+`;
+    console.log(item);
     return(item);
 };
 
