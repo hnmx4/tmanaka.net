@@ -87,6 +87,13 @@ h1 {
 #main .item:not(:last-child) {
     padding-bottom: 20px;
 }
+#main .item-text {
+    padding-top: 0.5em;
+    line-height: 1.5em;
+}
+#main .item:not(:last-child) {
+    border-left: 2px solid var(--deep);
+}
 
 /* time-series section */
 .time-series .item {
@@ -95,10 +102,6 @@ h1 {
     flex-direction: row;
     margin-right: 0;
 }
-.time-series .item:not(:last-child) {
-    border-left: 2px solid var(--deep);
-}
-
 .time-series .text-term {
     letter-spacing: -0.6px;
     line-height: 16px;
@@ -111,7 +114,12 @@ h1 {
     line-height: 20px;
     font-weight: 500;
 }
-.time-series .item-text {
-    padding-top: 0.5em;
-    line-height: 1.5em;
+
+/* publication section */
+.publication .item-headline {
+    line-height: 1.2em;
+    font-weight: 500;
+}
+.publication .item-headline, .publication .item-text {
+    margin-left: 24px;
 }
