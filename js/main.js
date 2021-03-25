@@ -57,7 +57,7 @@ const genEducationSectionItem = (term, degree, info) => {
 };
 
 const genSkillLevelGraph = (level) => {
-    const max = 10;
+    const max = 5;
     const fill = Array.from({length:level}, _ => '<div class="fill-circle"></div>');
     const empty = Array.from({length:max-level}, _ => '<div class="empty-circle"></div>');
     const ret = fill.concat(empty).join('');

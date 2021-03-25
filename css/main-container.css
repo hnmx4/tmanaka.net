@@ -65,10 +65,18 @@ h1 {
     padding: 0 0 16px 0;
     border-bottom: solid 2px var(--deep);
 }
-/* section-title と　item の間の線を埋める */
+/* section-title と item の間の線を埋める */
 #main .pad {
     content: '';
     height: 14px;
+    width: 100%;
+    margin: 0 0 0 22px;
+    border-left: 2px solid var(--deep);
+}
+/* section-title と item の間に文字を入れたいときに使う */
+#main .pad-wit-text {
+    line-height: 1.5em;
+    padding: 14px 0 7px 40px;
     width: 100%;
     margin: 0 0 0 22px;
     border-left: 2px solid var(--deep);
