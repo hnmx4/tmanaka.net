@@ -1,0 +1,188 @@
+:root {
+    --light: rgba(242, 242, 242, 1);
+    --deep: rgba(51, 51, 51, 1);
+    --accent: rgba(69, 177, 203, 1);
+}
+
+header {
+    height: 280px;
+    padding-top: 90px;
+    margin-left: 16px;
+}
+.contents {
+}
+
+h1 {
+    color: var(--deep);
+    font-family: "Noto Sans JP", Helvetica;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: 3.2px;
+    line-height: 52px;
+    min-height: 52px;
+    margin: 0 0 15px 0;
+}
+.h1-additional-text {
+    height: 24px;
+    color: var(--deep);
+    font-family: "Noto Sans JP", Helvetica;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 24px;
+    min-height: 24px;
+    white-space: nowrap;
+}
+
+/* section-common */
+#main section {
+    margin-bottom: 60px;
+}
+#main .section-title {
+    display: flex;
+    flex-direction: row;
+}
+#main .section-label {
+    font-size: 24px;
+    line-height: 24px;
+    width: 46px;
+    height: 46px;
+    border-radius: 46px;
+    background-color: var(--light);
+    border: 2px solid var(--deep);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main .section-name {
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+    margin: 0 0 0 16px;
+    padding: 0 0 16px 0;
+    border-bottom: solid 2px var(--deep);
+}
+/* section-title と item の間の線を埋める */
+#main .pad {
+    content: '';
+    height: 14px;
+    width: 100%;
+    margin: 0 0 0 22px;
+    border-left: 2px solid var(--deep);
+}
+/* section-title と item の間に文字を入れたいときに使う */
+#main .pad-wit-text {
+    line-height: 1.5em;
+    padding: 14px 0 7px 40px;
+    width: 100%;
+    margin: 0 0 0 22px;
+    border-left: 2px solid var(--deep);
+}
+#main .node {
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin-left: 15px;
+    position: absolute;
+    border-radius: 16px;
+    border: 2px solid var(--deep);
+    background: var(--light);
+}
+
+#main .item-wrap { padding: 0;}
+#main .item { margin: 0 0 0 22px; }
+#main .item:not(:last-child) { padding-bottom: 20px; }
+#main .item-text {
+    padding-top: 0.5em;
+    line-height: 1.5em;
+}
+#main .item:not(:last-child) { border-left: 2px solid var(--deep); }
+#main .section-text {
+    margin: 16px 0 16px 16px;
+    line-height: 1.5em;
+}
+
+/* about me section */
+.about-me .section-name { width: 100%; }
+
+.time-series-section .section-name, .list-section .section-name { width:580px; }
+
+/* time-series section */
+.time-series-section .item {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    margin-right: 0;
+}
+.time-series-section .text-term {
+    letter-spacing: -0.6px;
+    line-height: 16px;
+    margin-left: 24px;
+    margin-right: 40px;
+    width: 140px;
+}
+.time-series-section .item-headline {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+/* list section */
+.list-section .item-headline, .list-section .item-text {
+    margin-left: 40px;
+}
+
+/* publication section */
+.publication .item-headline {
+    line-height: 1.2em;
+    font-weight: 500;
+}
+
+/* skills section */
+.skills ul {
+    margin: 0;
+    padding: 0;
+}
+.skills .item-headline {
+    line-height: 20px;
+}
+.skills .item-text {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+.skill-item {
+    display: flex;
+    flex-direction: row;
+    line-height: 1.5em;
+    margin-right: 20px;
+}
+.skill-item:not(:last-child) {
+    margin-bottom: 0.5em;
+}
+/* .skill-name { flex: 3; } */
+.skill-level { flex: 1; }
+.skill-level {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+.fill-circle, .empty-circle {
+    width: 12px;
+    heght: 12px;
+    border-radius: 12px;
+}
+.fill-circle:not(:last-child), .empty-circle:not(:last-child) {
+    margin-right: 2px;
+}
+.fill-circle {
+    background-color: var(--deep);
+}
+.empty-circle {
+    border: 2px solid var(--deep);
+}

@@ -4,92 +4,278 @@
         <!-- page info -->
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>TAKAHASHI Manaka | hnm.xyz</title>
-
-        <!-- external file -->
-        <link href="css/main.css" rel="stylesheet" type="text/css"/>
+        <title>MANAKA TAKAHASHI | tmanaka.net</title>
 
         <!-- font -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="http://mplus-webfonts.sourceforge.jp/mplus_webfonts.css">
-        <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Ubuntu+Mono'>
+        <script src="https://kit.fontawesome.com/f822e1f8ef.js" crossorigin="anonymous"></script>
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- style sheet -->
+        <link href="css/common.css" rel="stylesheet" type="text/css"/>
+        <link href="css/side-container.css" rel="stylesheet" type="text/css"/>
+        <link href="css/main-container.css" rel="stylesheet" type="text/css"/>
+
+        <!-- script -->
+        <script src="js/main.js"></script>
     </head>
 
     <body>
-      <header>
-            <div class="container">
-	              <h1>TAKAHASHI Manaka</h1>
+        <div id="body-wrap">
+            <div id="side">
+                <section class="image-section">
+                    <img src="image/icon_light.png" alt="icon" />
+                </section>
+
+                <section class="info-section">
+                    <h2 class="section-name">INFO</h2>
+                    <ul class="item-wrap">
+                        <script>
+                         $( document ).ready(() => {
+                             // params: name, text, labelClass
+                             const params = [
+                                 ["Name", "Manaka Takahashi", "fas fa-user"],
+                                 ["Language", "Japanese", "fas fa-language"],
+                                 ["Email", "hnmnty[at]gmail.com", "fas fa-envelope"],
+                                 ["Website", "http://tmanaka.net", "fas fa-globe"],
+                             ];
+                             params.forEach((x) =>  $(".info-section > .item-wrap").append(genInfoSectionItem(...x)));
+                         });
+                        </script>
+                    </ul>
+                </section>
+
+                <section class="social-section">
+                    <h2 class="section-name">SOCIAL</h2>
+                    <ul class="item-wrap">
+                        <script>
+                         $( document ).ready(() => {
+                             // params: name, text, url, labelClass
+                             const params = [
+                                 ["Twitter", "hnmx4", "https://twitter.com/hnmx4", "fab fa-twitter"],
+                                 ["GitHub", "hnmx4", "https://github.com/hnmx4", "fab fa-github"],
+                                 ["GitLab", "hnmx4", "https://gitlab.com/hnmx4", "fab fa-gitlab"],
+                                 ["Hatena", "haneuma0628", "https://haneuma0628.hatenablog.jp/", "fas fa-pen-nib"],
+                                 ["Speaker Deck", "hnmx4", "https://speakerdeck.com/hnmx4", "fab fa-speaker-deck"]
+                             ];
+                             params.forEach((x) => $(".social-section > .item-wrap").append(genSocialSectionItem(...x)));
+                         });
+                        </script>
+                    </ul>
+                </section>
             </div>
-        </header>
 
-        <div id="contents">
-            <div class="container">
-	              <section>
-	                  <span class="bullet"></span>
-                    <h3>about me</h3>
-	                  <ul class="text">
-                        <li>ソフトウェアエンジニア見習いです。</li>
-                        <li>趣味でPythonとRubyを書いています。</li>
-                        <li>最近は人間の行動や情報検索のことが気になっています。</li>
-                        <li>コンピュータがいい感じに察してくれるシステムを作るのが好きです。</li>
-                    </ul>
-	              </section>
+            <div id="main">
+                <header>
+                    <h1>MANAKA TAKAHASHI</h1>
+                    <div class="h1-additional-text">高橋 真奈茄 | Software Engineer</div>
+                </header>
 
-                <section>
-                    <span class="bullet"></span>
-                    <h3>paper</h3>
-	                  <ul class="text">
-                        <li>高橋真奈茄, 小出洋, 近藤秀樹:</br>
-                            <strong>実践的プログラミング教育の支援環境における活動履歴を用いた活動パターン抽出の試み</strong>.</br>
-                            情報教育シンポジウム論文集, 2017/8.</li>
-                        <li>高橋真奈茄, 小出洋, 近藤秀樹:</br>
-                            <strong>PC上の活動履歴に基づく行動推定のための活動履歴分析手法の検討</strong>.</br>
-                            第58回プログラミングシンポジウム予稿集, 2017/1.</li>
-                        <li>高橋真奈茄, 小出洋, 近藤秀樹:</br>
-                            <strong>プログラミング学習者の行動ラベル付のためのデータ分析</strong>.</br>
-                            日本教育工学会研究報告集16(4), 2016/11.</li>
-                        <li>高橋真奈茄, 小出洋:</br>
-                            <strong>機械学習を用いたパターン認識による筆者識別</strong>.</br>
-                            第57回プログラミングシンポジウム予稿集, 2016/1.</li>
-                    </ul>
-                </section>
+                <div class="contents">
+                    <section class="about-me">
+                        <div class="section-title">
+                            <h2 class="section-name">ABOUT ME</h2>
+                        </div>
+                        <div class="section-text">
+                            I'm software engineer specialised in frontend, backend and API development for web apps.
+                            I have interests for analyze the User Activity on PC.
+                            I have developping logger, log visualize, analyze with statistics(please see my blog entry <a href="https://haneuma0628.hatenablog.jp/entry/2018/12/21/000000">here</a> and my paper).
+                        </div>
+                    </section>
+                    <section class="time-series-section work-experiences">
+                        <div class="section-title">
+                            <div class="section-label"><i class="fas fa-briefcase"></i></div>
+                            <h2 class="section-name">WORK EXPERIENCES</h2>
+                        </div>
+                        <ul class="item-wrap">
+                            <li class="pad"></li>
+                            <script>
+                                $(document).ready(() => {
+                                    // params: term, org, info
+                                    const params = [
+                                        [
+                                            "Apr.2018 - now",
+                                            "Yahoo Japan Corporation",
+                                            "Software Engineer, Full-time job.<br />Frontend Develop, Backend Develop, SRE,<br />Data analysis.",
+                                        ],
+                                        [
+                                            "Nov.2016 - Dec.2017",
+                                            "GMO Pepabo, Inc.",
+                                            "Software Engineer, Part-time job.<br />Software Infrastructure Engineering."
+                                        ],
+                                        [
+                                            "Jun.2015 - Dec.2016",
+                                            "MEHERGEN K.K.",
+                                            "Software Engineer, Part-time job.<br />Frontend Develop, Backend Develop.",
+                                        ]
+                                    ];
+                                    params.forEach((x) => $(".work-experiences > .item-wrap").append(genWorkExperiencesSectionItem(...x)));
+                                });
+                            </script>
+                        </ul>
+                    </section>
 
-                <section>
-                    <span class="bullet"></span>
-                    <h3>affiliation</h3>
-                    <ul class="text">
-                        <li>ヤフー株式会社 (2018/4 ~ )</li>
-                        <li>GMOペパボ株式会社 (2016/11 ~ 2017/12)</li>
-                        <li>九州工業大学大学院 情報工学府 (2016/4 ~ 2018/3)</li>
-                        <li>九州工業大学 情報工学部 (2014/4 ~ 2016/3)</li>
-                        <li>福島工業高等専門学校 電気工学科 (2009/4 ~ 2014/3)</li>
-                    </ul>
-                </section>
+                    <section class="time-series-section education">
+                        <div class="section-title">
+                            <div class="section-label"><i class="fas fa-graduation-cap"></i></div>
+                            <h2 class="section-name">EDUCATION</h2>
+                        </div>
+                        <ul class="item-wrap">
+                            <li class="pad"></li>
+                            <script>
+                             $(document).ready(() => {
+                                 // params: term, degree, info
+                                 const params = [
+                                     [
+                                         "Apr.2016 - Mar.2018",
+                                         "Master of Information Engineering",
+                                         "Department of Creative Informatics,<br />Kyushu Institute of Technology.<br />Supervisor: Professor, Hiroshi Koide.",
+                                     ],
+                                     [
+                                         "Apr.2014 - Mar.2016",
+                                         "Bachelor of Engineering",
+                                         "Computer Science and Systems Engineering,<br />Kyushu Institute of Technology.<br />Supervisor: Professor, Hiroshi Koide.",
+                                     ],
+                                     [
+                                         "Apr.2009 - Mar.2016",
+                                         "Foundation degree of Engineering",
+                                         "Electrical Engineering,<br />National Institute of Technology,<br />Fukushima College.",
+                                     ],
+                                 ];
+                                 params.forEach((x) => $(".education > .item-wrap").append(genEducationSectionItem(...x)));
+                             });
+                            </script>
+                          </ul>
+                    </section>
 
-                <section>
-                    <span class="bullet"></span>
-                    <h3>activity</h3>
-	                  <ul class="text">
-                        <li>情報処理学会プログラミングシンポジウム委員会 情報科学若手の会 幹事 (2015/10 ~)</li>
-                    </ul>
-                </section>
+                    <section class="list-section skills">
+                        <div class="section-title">
+                            <div class="section-label"><i class="fas fa-laptop-code"></i></div>
+                            <h2 class="section-name">SKILLS</h2>
+                        </div>
+                        <ul class="item-wrap">
+                            <li class="pad-wit-text">
+                                level1: Completed the tutorial.
+                                level2: Is familiar.
+                                level3: Often use.
+                                level4: Is using at work.
+                                level5: Having confidence:)
+                            </li>
+                            <script>
+                                $(document).ready(() => {
+                                    const params = {
+                                        "Programming Languages": [
+                                            ["Python", 4],
+                                            ["JavaScript", 4],
+                                            ["TypeScript", 4],
+                                            ["Ruby", 3],
+                                            ["PHP", 2],
+                                            ["C++", 2],
+                                            ["C#", 2],
+                                            ["Java", 1],
+                                            ["HTML/CSS", 2],
+                                            ["Rust", 1],
+                                            ["Go", 1],
+                                        ],
+                                        "Framework/Library": [
+                                            ["node.js", 4],
+                                            ["React/Redux", 4],
+                                            ["Django", 2],
+                                            ["Fuel PHP", 2],
+                                            ["Ruby on Rails", 2],
+                                        ],
+                                        "Middleware": [
+                                            ["Apache Web Server", 4],
+                                            ["MySQL", 4],
+                                            ["Apache Hive", 2],
+                                            ["MongoDB", 2],
+                                        ],
+                                        "Other": [
+                                            ["CentOS 6/7", 4],
+                                            ["Git", 4],
+                                            ["Emacs", 5],
+                                            ["Chef", 4],
+                                            ["Screwdriver.cd", 4],
+                                            ["Elasticsearch", 3],
+                                            ["Kibana", 3],
+                                            ["Sketch.app", 3],
+                                            ["Illustration", 3]
+                                        ]
+                                    };
+                                    for (const [k, v] of Object.entries(params)) {
+                                        $(".skills > .item-wrap").append(genSkillsSectionItem(k, v));
+                                    }
+                                });
+                            </script>
+                        </ul>
+                    </section>
 
-	              <section>
-	                  <span class="bullet"></span>
-                    <h3>info</h3>
-	                  <ul class="text">
-                        <li><li class="fa fa-envelope"></li> hnmnty [at] gmail.com</li>
-	                      <li><li class="fa fa-github fa-lg"></li> <a href="https://github.com/hnmx4">hnmx4</a></li>
-	                      <li><li class="fa fa-pencil fa-lg"></li> <a href="http://haneuma0628.hatenablog.jp/">haneuma0628</a></li>
-	                  </ul>
-	              </section>
+                    <section class="list-section publication">
+                        <div class="section-title">
+                            <div class="section-label"><i class="fas fa-book-open"></i></div>
+                            <h2 class="section-name">PUBLICATION</h2>
+                        </div>
+                        <ul class="item-wrap">
+                            <li class="pad"></li>
+                            <script>
+                                $(document).ready(() => {
+                                    // params: title, author, info
+                                    const params = [
+                                        [
+                                            "実践的プログラミング教育の支援環境における<br />活動履歴を用いた活動パターン抽出の試み.",
+                                            "高橋真奈茄, 小出洋, 近藤秀樹.",
+                                            "情報教育シンポジウム論文集, Aug.2017.",
+                                        ],
+                                        [
+                                            "PC上の活動履歴に基づく行動推定のための活動履歴分析手法の検討.",
+                                            "高橋真奈茄, 小出洋, 近藤秀樹.",
+                                            "第58回プログラミングシンポジウム予稿集, Jan.2017."
+                                        ],
+                                        [
+                                            "プログラミング学習者の行動ラベル付のためのデータ分析.",
+                                            "高橋真奈茄, 小出洋, 近藤秀樹.",
+                                            "日本教育工学会研究報告集16(4), Nov.2016.",
+
+                                        ],
+                                        [
+                                            "機械学習を用いたパターン認識による筆者識別.",
+                                            "高橋真奈茄, 小出洋.",
+                                            "第57回プログラミングシンポジウム予稿集, Jan.2016."
+
+                                        ]
+                                    ];
+                                    params.forEach((x) => $(".publication > .item-wrap").append(genPublicationSectionItem(...x)));
+                                });
+                            </script>
+                        </ul>
+                    </section>
+
+                    <section class="time-series-section volunteer-work">
+                        <div class="section-title">
+                            <div class="section-label"><i class="fas fa-hands-helping"></i></div>
+                            <h2 class="section-name">VOLUNTEER WORK</h2>
+                        </div>
+                        <ul class="item-wrap">
+                            <li class="pad"></li>
+                            <script>
+                                $(document).ready(() => {
+                                    // params: term, org, info
+                                    const params = [
+                                        [
+                                            "Oct.2015 - now",
+                                            "Information Science Youth Association",
+                                            'Organizer.<br />Programming Symposium Committee, IPSJ.<br /><a href="https://wakate.org">https://wakate.org</a>'
+                                        ],
+                                    ]
+                                    params.forEach(x => $(".volunteer-work > .item-wrap").append(genVolunteerWorkSectionItem(...x)));
+                                });
+                            </script>
+                        </ul>
+                    </section>
+
+                </div>
             </div>
         </div>
-
-        <footer>
-            <div class="container">
-	              -UUU:**--F1  index.html     Bot L54    (HTML)
-            </div>
-        </footer>
     </body>
 </html>
