@@ -23,3 +23,66 @@ const genSocialSectionItem = (name, text, url, labelClass) => {
 `;
     return(item);
 };
+
+const genWorkExperiencesSectionItem = (term, org, info) => {
+    const item = `
+<li class="item">
+    <div class="text-term">${term}</div>
+    <div>
+        <h3 class="item-headline">${org}</h3>
+        <div class="item-text">
+            ${info}
+        </div>
+    </div>
+</li>
+`;
+    return(item);
+};
+
+const genEducationSectionItem = (term, degree, info) => {
+    const item = `
+<li class="item">
+    <div class="text-term">${term}</div>
+    <div>
+        <h3 class="item-headline">${degree}</h3>
+        <div class="item-text">
+            ${info}
+        </div>
+    </div>
+</li>
+`;
+    return(item);
+};
+
+const genSkillsSectionItem = () => {
+    const item = ``;
+    return(item);
+};
+
+const genPublicationSectionItem = (title, author, info) => {
+    const item = `
+<li class="item">
+    <h3 class="item-headline">${title}</h3>
+    <div class="item-text">
+        ${author}<br />
+        ${info}
+    </div>
+</li>
+`;
+    return(item);
+};
+
+const genVolunteerWorkSectionItem = (term, org, info) => {
+    const item = `
+<li class="item">
+    <div class="text-term">${term}</div>
+    <div>
+        <h3 class="item-headline">${org}</h3>
+        <div class="item-text">
+            ${info}
+        </div>
+    </div>
+</li>
+`;
+    return(item);
+};

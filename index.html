@@ -64,7 +64,6 @@
                         </script>
                     </ul>
                 </section>
-
             </div>
 
             <div id="main">
@@ -81,37 +80,29 @@
                         </div>
                         <ul class="item-wrap">
                             <li class="pad"></li>
-                            <li class="item">
-                                <div class="text-term">Apr.2018 - now</div>
-                                <div>
-                                    <h3 class="item-headline">Yahoo Japan Corporation</h3>
-                                    <div class="item-text">
-                                        Software Engineer, Full-time job.<br />
-                                        Frontend Develop, Backend Develop, SRE, <br />
-                                        Data analysis.
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="item">
-                                <div class="text-term">Nov.2016 - Dec.2017</div>
-                                <div>
-                                    <h3 class="item-headline">GMO Pepabo, Inc.</h3>
-                                    <div class="item-text">
-                                        Software Engineer, Part-time job.<br />
-                                        Software Infrastructure Engineering.
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="item">
-                                <div class="text-term">Jun.2015 - Dec.2016</div>
-                                <div>
-                                    <h3 class="item-headline">MEHERGEN K.K.</h3>
-                                    <div class="item-text">
-                                        Software Engineer, Part-time job.<br />
-                                        Frontend Develop, Backend Develop.
-                                    </div>
-                                </div>
-                            </li>
+                            <script>
+                                $(document).ready(() => {
+                                    // params: term, org, info
+                                    const params = [
+                                        [
+                                            "Apr.2018 - now",
+                                            "Yahoo Japan Corporation",
+                                            "Software Engineer, Full-time job.<br />Frontend Develop, Backend Develop, SRE,<br />Data analysis.",
+                                        ],
+                                        [
+                                            "Nov.2016 - Dec.2017",
+                                            "GMO Pepabo, Inc.",
+                                            "Software Engineer, Part-time job.<br />Software Infrastructure Engineering."
+                                        ],
+                                        [
+                                            "Jun.2015 - Dec.2016",
+                                            "MEHERGEN K.K.",
+                                            "Software Engineer, Part-time job.<br />Frontend Develop, Backend Develop.",
+                                        ]
+                                    ];
+                                    params.forEach((x) => $(".work-experiences > .item-wrap").append(genWorkExperiencesSectionItem(...x)));
+                                });
+                            </script>
                         </ul>
                     </section>
 
@@ -122,42 +113,30 @@
                         </div>
                         <ul class="item-wrap">
                             <li class="pad"></li>
-                            <li class="item">
-                                <div class="text-term">Apr.2016 - Mar.2018</div>
-                                <div>
-                                    <h3 class="item-headline">Master of Information Engineering</h3>
-                                    <div class="item-text">
-                                        Department of Creative Informatics,<br />
-                                        Kyushu Institute of Technology.<br />
-                                        Supervisor: Professor, Hiroshi Koide.
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="item">
-                                <div class="text-term">Apr.2014 - Mar.2016</div>
-                                <div>
-                                    <h3 class="item-headline">Bachelor of Engineering</h3>
-                                    <div class="item-text">
-                                        Computer Science and Systems Engineering,<br />
-                                        Kyushu Institute of Technology.<br />
-                                        Supervisor: Professor, Hiroshi Koide.
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="item">
-                                <div class="text-term">Apr.2009 - Mar.2016</div>
-                                <div>
-                                    <h3 class="item-headline">Foundation degree of Engineering</h3>
-                                    <div class="item-text">
-                                        Electrical Engineering,<br />
-                                        National Institute of Technology,<br />
-                                        Fukushima College.
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+                            <script>
+                             $(document).ready(() => {
+                                 // params: term, degree, info
+                                 const params = [
+                                     [
+                                         "Apr.2016 - Mar.2018",
+                                         "Master of Information Engineering",
+                                         "Department of Creative Informatics,<br />Kyushu Institute of Technology.<br />Supervisor: Professor, Hiroshi Koide.",
+                                     ],
+                                     [
+                                         "Apr.2014 - Mar.2016",
+                                         "Bachelor of Engineering",
+                                         "Computer Science and Systems Engineering,<br />Kyushu Institute of Technology.<br />Supervisor: Professor, Hiroshi Koide.",
+                                     ],
+                                     [
+                                         "Apr.2009 - Mar.2016",
+                                         "Foundation degree of Engineering",
+                                         "Electrical Engineering,<br />National Institute of Technology,<br />Fukushima College.",
+                                     ],
+                                 ];
+                                 params.forEach((x) => $(".education > .item-wrap").append(genEducationSectionItem(...x)));
+                             });
+                            </script>
+                          </ul>
                     </section>
 
                     <section class="skills">
@@ -183,13 +162,36 @@
                         </div>
                         <ul class="item-wrap">
                             <li class="pad"></li>
-                            <li class="item">
-                                <h3 class="item-headline">実践的プログラミング教育の支援環境における活動履歴を用いた活動パターン抽出の試み.</h3>
-                                <div class="item-text">
-                                    hoge, fuga, piyo.<br />
-                                    hogehoge.
-                                </div>
-                            </li>
+                            <script>
+                                $(document).ready(() => {
+                                    // params: title, author, info
+                                    const params = [
+                                        [
+                                            "実践的プログラミング教育の支援環境における活動履歴を用いた活動パターン抽出の試み.",
+                                            "高橋真奈茄, 小出洋, 近藤秀樹.",
+                                            "情報教育シンポジウム論文集, Aug.2017.",
+                                        ],
+                                        [
+                                            "PC上の活動履歴に基づく行動推定のための活動履歴分析手法の検討",
+                                            "高橋真奈茄, 小出洋, 近藤秀樹.",
+                                            "第58回プログラミングシンポジウム予稿集, Jan.2017."
+                                        ],
+                                        [
+                                            "プログラミング学習者の行動ラベル付のためのデータ分析",
+                                            "高橋真奈茄, 小出洋, 近藤秀樹.",
+                                            "日本教育工学会研究報告集16(4), Nov.2016.",
+
+                                        ],
+                                        [
+                                            "機械学習を用いたパターン認識による筆者識別",
+                                            "高橋真奈茄, 小出洋.",
+                                            "第57回プログラミングシンポジウム予稿集, Jan.2016."
+
+                                        ]
+                                    ];
+                                    params.forEach((x) => $(".publication > .item-wrap").append(genPublicationSectionItem(...x)));
+                                });
+                            </script>
                         </ul>
                     </section>
 
@@ -200,17 +202,19 @@
                         </div>
                         <ul class="item-wrap">
                             <li class="pad"></li>
-                            <li class="item">
-                                <div class="text-term">Oct.2015 - now</div>
-                                <div>
-                                    <h3 class="item-headline">Information Science Youth Association</h3>
-                                    <div class="item-text">
-                                        Organizer.<br />
-                                        Programming Symposium Committee, IPSJ.<br />
-                                        https://wakate.org
-                                    </div>
-                                </div>
-                            </li>
+                            <script>
+                                $(document).ready(() => {
+                                    // params: term, org, info
+                                    const params = [
+                                        [
+                                            "Oct.2015 - now",
+                                            "Information Science Youth Association",
+                                            'Organizer.<br />Programming Symposium Committee, IPSJ.<br /><a href="https://wakate.org">https://wakate.org</a>'
+                                        ],
+                                    ]
+                                    params.forEach(x => $(".volunteer-work > .item-wrap").append(genVolunteerWorkSectionItem(...x)));
+                                });
+                            </script>                            
                         </ul>
                     </section>
 

@@ -29,6 +29,10 @@ body {
 
 h1, h2, h3 { margin: 0; }
 li { list-style-type: none; }
+a {
+    text-decoration: none;
+    color: var(--accent);
+}
 
 #body-wrap {
     display: flex;
