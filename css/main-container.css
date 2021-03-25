@@ -44,8 +44,8 @@ h1 {
     flex-direction: row;
 }
 #main .section-label {
-    font-size: 28px;
-    line-height: 28px;
+    font-size: 24px;
+    line-height: 24px;
     width: 46px;
     height: 46px;
     border-radius: 46px;
@@ -96,20 +96,20 @@ h1 {
 }
 
 /* time-series section */
-.time-series .item {
+.time-series-section .item {
     align-items: flex-start;
     display: flex;
     flex-direction: row;
     margin-right: 0;
 }
-.time-series .text-term {
+.time-series-section .text-term {
     letter-spacing: -0.6px;
     line-height: 16px;
     margin-left: 24px;
     margin-right: 40px;
     width: 140px;
 }
-.time-series .item-headline {
+.time-series-section .item-headline {
     font-size: 20px;
     line-height: 20px;
     font-weight: 500;
@@ -120,6 +120,8 @@ h1 {
     line-height: 1.2em;
     font-weight: 500;
 }
-.publication .item-headline, .publication .item-text {
-    margin-left: 24px;
+
+/* list section */
+.list-section .item-headline, .list-section .item-text {
+    margin-left: 40px;
 }
