@@ -7,6 +7,7 @@
 header {
     height: 280px;
     padding-top: 90px;
+    margin-left: 16px;
 }
 .contents {
 }
@@ -173,7 +174,7 @@ h1 {
 }
 .fill-circle, .empty-circle {
     width: 12px;
-    height: 12px;
+    heght: 12px;
     border-radius: 12px;
 }
 .fill-circle:not(:last-child), .empty-circle:not(:last-child) {
