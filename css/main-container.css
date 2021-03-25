@@ -149,18 +149,22 @@ h1 {
 .skills .item-headline {
     line-height: 20px;
 }
+.skills .item-text {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
 .skill-item {
     display: flex;
     flex-direction: row;
-    line-height: 1em;
-    margin-right: 40px;
+    line-height: 1.5em;
+    margin-right: 20px;
 }
 .skill-item:not(:last-child) {
     margin-bottom: 0.5em;
 }
-.skill-name, .skill-level {
-    flex: 1;
-}
+/* .skill-name { flex: 3; } */
+.skill-level { flex: 1; }
 .skill-level {
     display: flex;
     flex-direction: row;
