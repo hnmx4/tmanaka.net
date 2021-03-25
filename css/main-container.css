@@ -164,7 +164,7 @@ h1 {
 .skill-item:not(:last-child) {
     margin-bottom: 0.5em;
 }
-/* .skill-name { flex: 3; } */
+.skill-name { flex: 2; }
 .skill-level { flex: 1; }
 .skill-level {
     display: flex;
@@ -174,7 +174,7 @@ h1 {
 }
 .fill-circle, .empty-circle {
     width: 12px;
-    heght: 12px;
+    height: 12px;
     border-radius: 12px;
 }
 .fill-circle:not(:last-child), .empty-circle:not(:last-child) {
