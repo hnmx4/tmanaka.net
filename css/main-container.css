@@ -56,8 +56,11 @@ h1 {
     justify-content: center;
 }
 #main .section-name {
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 700;
+
     letter-spacing: 3px;
-    width: 530px;
     margin: 0 0 0 16px;
     padding: 0 0 16px 0;
     border-bottom: solid 2px var(--deep);
@@ -67,32 +70,31 @@ h1 {
     content: '';
     height: 14px;
     width: 100%;
+    margin: 0 0 0 22px;
     border-left: 2px solid var(--deep);
 }
-#main .item:before {
+#main .node {
     content: '';
     width: 16px;
     height: 16px;
+    margin-left: 15px;
     position: absolute;
-    left: 393px;  /* =340+40+13 */
     border-radius: 16px;
     border: 2px solid var(--deep);
     background: var(--light);
 }
 
-#main .item-wrap {
-    padding: 0;
-    margin: 0 0 0 22px;
-}
-#main .item:not(:last-child) {
-    padding-bottom: 20px;
-}
+#main .item-wrap { padding: 0;}
+#main .item { margin: 0 0 0 22px; }
+#main .item:not(:last-child) { padding-bottom: 20px; }
 #main .item-text {
     padding-top: 0.5em;
     line-height: 1.5em;
 }
-#main .item:not(:last-child) {
-    border-left: 2px solid var(--deep);
+#main .item:not(:last-child) { border-left: 2px solid var(--deep); }
+#main .section-text {
+    margin: 16px 0 16px 16px;
+    line-height: 1.5em;
 }
 
 /* time-series section */

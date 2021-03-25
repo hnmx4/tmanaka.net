@@ -26,6 +26,7 @@ const genSocialSectionItem = (name, text, url, labelClass) => {
 
 const genWorkExperiencesSectionItem = (term, org, info) => {
     const item = `
+<div class="node"></div>
 <li class="item">
     <div class="text-term">${term}</div>
     <div>
@@ -41,6 +42,7 @@ const genWorkExperiencesSectionItem = (term, org, info) => {
 
 const genEducationSectionItem = (term, degree, info) => {
     const item = `
+<div class="node"></div>
 <li class="item">
     <div class="text-term">${term}</div>
     <div>
@@ -60,7 +62,7 @@ const genSkillLevelGraph = (level) => {
     const empty = Array.from({length:max-level}, _ => '<div class="empty-circle"></div>');
     const ret = fill.concat(empty).join('');
     return(ret);
-}
+};
 
 const genSkillsSectionItem = (category, skillList) => {
     // skillList format [['name', level], ['name2', level],...]
@@ -74,12 +76,13 @@ const genSkillsSectionItem = (category, skillList) => {
     );
 
     const item = `
+<div class="node"></div>
 <li class="item">
     <h3 class="item-headline">${category}</h3>
     <ul class="item-text">
         ${skillItems.join("\n")}
     </ul>
-</li>    
+</li>
 `;
     console.log(item);
     return(item);
@@ -87,6 +90,7 @@ const genSkillsSectionItem = (category, skillList) => {
 
 const genPublicationSectionItem = (title, author, info) => {
     const item = `
+<div class="node"></div>
 <li class="item">
     <h3 class="item-headline">${title}</h3>
     <div class="item-text">
@@ -100,6 +104,7 @@ const genPublicationSectionItem = (title, author, info) => {
 
 const genVolunteerWorkSectionItem = (term, org, info) => {
     const item = `
+<div class="node"></div>
 <li class="item">
     <div class="text-term">${term}</div>
     <div>

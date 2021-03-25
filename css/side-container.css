@@ -5,7 +5,7 @@
 }
 
 /* common */
-.side-section-name {
+#side .section-name {
     font-size: 28px;
     line-height: 28px;
     font-weight: 700;
