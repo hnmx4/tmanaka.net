@@ -24,6 +24,7 @@ jobs:
     - name: Deploy files to server
       run: |
         rsync -avz --delete \
+          --exclude-from='.rsync-ignore' \
           -e "ssh -p ${{ secrets.SSH_PORT }} -o StrictHostKeyChecking=no" \
           ./ \
           deploy@hassaku.tech:/var/www/src/tmanaka.net
