@@ -1,5 +1,7 @@
 .github/
 .git/
 
+.gitignore
+.rsync-ignore
 README.md
 design.sketch
