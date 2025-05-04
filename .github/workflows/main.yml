@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     branches:
-      - main  # main ブランチにプッシュされたときに実行
+      - master  # main ブランチにプッシュされたときに実行
 
 jobs:
   deploy:
